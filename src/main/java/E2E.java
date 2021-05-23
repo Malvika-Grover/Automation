@@ -80,5 +80,4 @@ public class E2E {
         driver.findElement(By.xpath("//input[@value='Close']")).click();
     }
 
-
 }
