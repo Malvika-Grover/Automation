@@ -20,6 +20,8 @@ public class DropDownWithLoops {
 //        }
 //        driver.findElement(By.id("btnclosepaxoption")).click();
 //        selecting drop down using for loop
+
+
         for (i=1;i<=5;i++){
             Thread.sleep(1000L);
             driver.findElement(By.id("hrefIncAdt")).click();

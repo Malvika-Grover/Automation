@@ -26,8 +26,6 @@ public class B {
     }
 
 
-
-
     //main method
     public static void main(String[] args) {
         //object create with name - obj of class A

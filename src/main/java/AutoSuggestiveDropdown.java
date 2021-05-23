@@ -13,8 +13,6 @@ public class AutoSuggestiveDropdown {
         driver.get("https://www.rahulshettyacademy.com/dropdownsPractise/");
         driver.findElement(By.id("autosuggest")).sendKeys("ind");
         Thread.sleep(500);
-//        List<WebElement> options = driver.findElement(By.xpath("//ul[@id='ui-id-1']"));
-//        List <WebElement> Options = driver.findElements(By.xpath("//ul[@id='ui-id-1']"));
 
         List<WebElement> Options = driver.findElements(By.cssSelector("li[class='ui-menu-item'] a"));
         for (WebElement option :Options){

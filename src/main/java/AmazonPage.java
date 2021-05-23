@@ -1,3 +1,4 @@
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -14,14 +15,14 @@ public class AmazonPage {
          */
 
 //        driver.findElement(By.cssSelector("a[id='nav-logo-sprites'])")).click();      -> CSS Selector
-//        driver.findElement(By.xpath("//a[@id='nav-global-location-popover-link']")).click();
-//        driver.findElement(By.xpath("//span[@id='nav-search-label-id']"));
-//        driver.findElement(By.xpath("//input[@id='twotabsearchtextbox']")).sendKeys("Mobile");
-//        driver.findElement(By.xpath("//input[@value='Go']")).click();
-//        driver.findElement(By.xpath("span[class='icp-nav-flag icp-nav-flag-in']")).click();
-//        driver.findElement(By.xpath("a[id='nav-link-accountList']")).click();
-//        driver.findElement(By.xpath("a[id='nav-orders']")).click();
-//        driver.findElement(By.xpath("a[id='nav-cart']")).click();
+        driver.findElement(By.xpath("//a[@id='nav-global-location-popover-link']")).click();
+        driver.findElement(By.xpath("//span[@id='nav-search-label-id']"));
+        driver.findElement(By.xpath("//input[@id='twotabsearchtextbox']")).sendKeys("Mobile");
+        driver.findElement(By.xpath("//input[@value='Go']")).click();
+        driver.findElement(By.xpath("span[class='icp-nav-flag icp-nav-flag-in']")).click();
+        driver.findElement(By.xpath("a[id='nav-link-accountList']")).click();
+        driver.findElement(By.xpath("a[id='nav-orders']")).click();
+        driver.findElement(By.xpath("a[id='nav-cart']")).click();
         driver.wait(1);
         driver.close();
 

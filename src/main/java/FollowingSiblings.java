@@ -8,9 +8,7 @@ public class FollowingSiblings {
         WebDriver driver = new ChromeDriver();
 
         driver.get("https://www.scientecheasy.com/2019/08/xpath-axes.html/");
-//        driver.findElement(By.xpath("//a[@class='read-more']")).click();
         driver.findElement(By.xpath("//div[@class='lwptoc_item'][4]/preceding-sibling::div[2]")).click();
-//        driver.findElement(By.xpath("//div[@class='lwptoc_item'][4]/following-sibling::div[3]")).click();
     }
 }
 

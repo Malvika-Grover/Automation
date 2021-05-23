@@ -7,7 +7,6 @@ import org.openqa.selenium.support.ui.Select;
 public class DynamicDropdown {
 
     public static void main(String[] args) throws InterruptedException {
-
         WebDriver driver = new ChromeDriver();
 
         driver.get("https://www.rahulshettyacademy.com/dropdownsPractise/");
@@ -15,23 +14,19 @@ public class DynamicDropdown {
         driver.findElement(By.xpath("//a[@value='KQH']")).click();
         System.out.println(driver.findElement(By.xpath("//a[@value='KQH']")).getText());
         Thread.sleep(1000);
-//      driver.findElement(By.xpath("(//a[@value='PAT'])[2]")).click();     --> 1
-        driver.findElement(By.xpath("//div[@id='glsctl00_mainContent_ddl_destinationStation1_CTNR'] //a[@value='PAT']")).click();       // --> 2
+        //One way
+        //driver.findElement(By.xpath("(//a[@value='PAT'])[2]")).click();
+
+        // Another way
+        driver.findElement(By.xpath("//div[@id='glsctl00_mainContent_ddl_destinationStation1_CTNR'] //a[@value='PAT']")).click();
         System.out.println(driver.findElement(By.xpath("//div[@class='search_options_menucontent']//a[@value='PAT']")).getText());
-
-
         WebElement drop = driver.findElement(By.id("cyx"));
         Select dropdown = new Select(drop);
         System.out.println(dropdown.getFirstSelectedOption().getText());
 
-
-
     }
 }
-
-
 /*
-
 There are 2 ways to fetch dynamic dropdowns:
 1. When you have to 1 xpath of 2 elements on 2 different dropdown then selenium get confuses which one to select.
 By default it selects the first one and throws error for the second saying "element not visible",

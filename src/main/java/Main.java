@@ -13,7 +13,6 @@ public class Main {
         driver.findElement(By.name("rememberUn")).click();
         driver.wait(20);
         driver.findElement(By.name("Login")).click();
-//      driver.findElement(By.cssSelector("div#error.loginError")).getText();
         driver.findElement(By.id("error")).getText();
 
         driver.close();
