@@ -2,7 +2,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class ShoppingCart {
+public class ShoppingCartBasics {
 
     public static void main(String[] args) throws InterruptedException {
         WebDriver driver = new ChromeDriver();
@@ -44,7 +44,7 @@ public class ShoppingCart {
         // Checkout
         driver.findElement(By.xpath("//div[@class='cart-preview active']/div[2]/button")).click();
 
-        Thread.sleep(2000l);
+        Thread.sleep(2000L);
         //Promocode
         driver.findElement(By.xpath("//input[@class='promoCode']")).sendKeys("rahulshettyacademy");
 
